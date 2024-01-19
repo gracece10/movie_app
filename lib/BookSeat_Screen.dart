@@ -1,3 +1,4 @@
+import 'package:app_movie/ConfirmOrder_Screen.dart';
 import 'package:app_movie/transaksi_screen.dart';
 import 'package:app_movie/widgets/SeatWidget.dart';
 import 'package:flutter/material.dart';
@@ -206,7 +207,7 @@ class BookingScreen3 extends StatelessWidget {
                           child: ElevatedButton(
                             onPressed: () {
                               Navigator.of(context).push(MaterialPageRoute(
-                                  builder: (context) => TransactionScreen()));
+                                  builder: (context) => ConfirmOrderScreen()));
                             },
                             style: ElevatedButton.styleFrom(
                               // primary: AppColor.primaryColor,

@@ -1,4 +1,5 @@
 import 'package:app_movie/booking_screen2.dart';
+import 'package:app_movie/pages/main_page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -7,14 +8,21 @@ class BookingScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        extendBodyBehindAppBar: false,
         appBar: AppBar(
           elevation: 0,
-          backgroundColor:
-              Colors.teal.shade900, // Warna app bar sesuai keinginan Anda
+          backgroundColor: Colors.teal.shade900,
           leading: IconButton(
             icon: Icon(Icons.arrow_back),
             onPressed: () {
-              Navigator.pop(context);
+              // Navigator.pop(context);
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(
+                  builder: (context) =>
+                      MainPage(), // Ganti dengan halaman yang diinginkan
+                ),
+              );
             },
           ),
           title: Image.asset(

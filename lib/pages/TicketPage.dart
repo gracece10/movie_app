@@ -1,3 +1,4 @@
+import 'package:app_movie/transaksi_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -388,12 +389,23 @@ class TicketContainer extends StatelessWidget {
                     thickness: 1.0, // Ketebalan garis vertikal
                     width: 20.0, // Lebar garis vertikal
                   ),
-                  Text(
-                    "Details",
-                    style: GoogleFonts.ptSans(
-                      fontSize: 16,
-                      color: Colors.teal.shade900,
-                      fontWeight: FontWeight.bold,
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) =>
+                              TransactionScreen(), // Ganti dengan halaman yang diinginkan
+                        ),
+                      );
+                    },
+                    child: Text(
+                      "Details",
+                      style: GoogleFonts.ptSans(
+                        fontSize: 16,
+                        color: Colors.teal.shade900,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
                 ],

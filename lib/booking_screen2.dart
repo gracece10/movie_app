@@ -1,10 +1,9 @@
-import 'package:app_movie/booking_screen3.dart';
+import 'package:app_movie/BookSeat_Screen.dart';
 import 'package:flutter/material.dart';
 
 class BookingScreen2 extends StatelessWidget {
   List formats = ["2D", "3D", "4D", "IMAX"];
   List days = ["S", "M", "T", "W", "T", "F", "W"];
-
   @override
   Widget build(BuildContext context) {
     return SafeArea(
